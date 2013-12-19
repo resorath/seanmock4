@@ -4,13 +4,6 @@ html {
 	background-color: #FFFFFF;
 }
 
-header
-{
-}
-
-body
-{
-}
 
 header h1 {
 	text-align: center;
@@ -33,14 +26,27 @@ footer p
 	text-align: center;
 	font-size: 14px;
 	color: #666666;
-	margin: 0;
+	margin-top: 20px;
 	font-weight: 200;
+}
+
+#filter
+{
+	text-align: center;
 }
 
 #portfolio
 {
 
 }
+
+.detailview
+{
+	display: none;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
 
 .calltoaction
 {
@@ -57,6 +63,7 @@ footer p
 .imagegridelement
 {
 	margin: 5px;
+	cursor: pointer;
 }
 
 .imagegridelement > img#featured

@@ -13,7 +13,6 @@
 
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
@@ -30,15 +29,25 @@
         <div class="container calltoaction">
           <button class="btn btn-primary btn-wide" type="button">Say Hello</button>
           <button class="btn btn-primary btn-wide" type="button">View Resume</button>
+          <button class="btn btn-primary btn-wide" type="button">Learn More About Sean</button>
         </div>
+      </section>
+
+      <section id="filter">
+        <div id="filters" class="btn-group  btn-group-xs">
+          <button type="button" class="btn btn-default" data-filter="*">Show All Work</button>
+          <button type="button" class="btn btn-default" data-filter=".ux">UX and Frontend Design</button>
+          <button type="button" class="btn btn-default" data-filter=".web">Technical Web Applications</button>
+          <button type="button" class="btn btn-default" data-filter=".pm">Projects I've Managed</button>
+        </ul>
       </section>
 
       <section id="portfolio">
         <div id="imagegrid">
-            <div class="imagegridelement"><img src="sample-images/image_1_big.jpg" id="featured"></div>
-            <div class="imagegridelement"><img src="sample-images/image_2.jpg" id="standard"></div>
-            <div class="imagegridelement"><img src="sample-images/image_3.jpg" id="standard"></div>
-            <div class="imagegridelement"><img src="sample-images/image_4.jpg" id="standard"></div>
+            <div class="imagegridelement ux" id="project1"><img src="sample-images/image_1_big.jpg" id="featured"></div>
+            <div class="imagegridelement web" id="project2"><img src="sample-images/image_2.jpg" id="standard"></div>
+            <div class="imagegridelement pm"><img src="sample-images/image_3.jpg" id="standard"></div>
+            <div class="imagegridelement pm"><img src="sample-images/image_4.jpg" id="standard"></div>
             <div class="imagegridelement"><img src="sample-images/image_5.jpg" id="standard"></div>
             <div class="imagegridelement"><img src="sample-images/image_6.jpg" id="standard"></div>
             <div class="imagegridelement"><img src="sample-images/image_7.jpg" id="standard"></div>
@@ -67,6 +76,10 @@
             <div class="imagegridelement"><img src="sample-images/image_10.jpg" id="standard"></div>
 
         </div>
+
+        <div class="container detailview">
+          lorum ipsum DOLAN
+        </div>
       </section>
 
       <footer>
@@ -91,6 +104,22 @@
           columnWidth : 210
         },
   });
+
+  // filter items when filter link is clicked
+  $('#filters button').click(function(){
+    var selector = $(this).attr('data-filter');
+    $('#imagegrid').isotope({ filter: selector });
+    $('.detailview').fadeOut(500);
+    return false;
+  });
+
+  $('.imagegridelement').click(function(){
+    $('#imagegrid').isotope({ filter: '#nothing'});
+    $('.detailview').fadeIn(500);
+
+  })
+
+
   </script>
   </body>
 </html>
