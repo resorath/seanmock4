@@ -46,34 +46,34 @@
         <div id="imagegrid">
             <div class="imagegridelement ux" id="project1"><img src="sample-images/image_1_big.jpg" id="featured"></div>
             <div class="imagegridelement web" id="project2"><img src="sample-images/image_2.jpg" id="standard"></div>
-            <div class="imagegridelement pm"><img src="sample-images/image_3.jpg" id="standard"></div>
-            <div class="imagegridelement pm"><img src="sample-images/image_4.jpg" id="standard"></div>
-            <div class="imagegridelement"><img src="sample-images/image_5.jpg" id="standard"></div>
-            <div class="imagegridelement"><img src="sample-images/image_6.jpg" id="standard"></div>
-            <div class="imagegridelement"><img src="sample-images/image_7.jpg" id="standard"></div>
-            <div class="imagegridelement"><img src="sample-images/image_8_big.jpg" id="featured"></div>
-            <div class="imagegridelement"><img src="sample-images/image_9.jpg" id="standard"></div>
-            <div class="imagegridelement"><img src="sample-images/image_10.jpg" id="standard"></div>
-            <div class="imagegridelement"><img src="sample-images/image_1.jpg" id="standard"></div>
-            <div class="imagegridelement"><img src="sample-images/image_2.jpg" id="standard"></div>
-            <div class="imagegridelement"><img src="sample-images/image_3.jpg" id="standard"></div>
-            <div class="imagegridelement"><img src="sample-images/image_4.jpg" id="standard"></div>
-            <div class="imagegridelement"><img src="sample-images/image_5.jpg" id="standard"></div>
-            <div class="imagegridelement"><img src="sample-images/image_6.jpg" id="standard"></div>
-            <div class="imagegridelement"><img src="sample-images/image_7.jpg" id="standard"></div>
-            <div class="imagegridelement"><img src="sample-images/image_8.jpg" id="standard"></div>
-            <div class="imagegridelement"><img src="sample-images/image_9.jpg" id="standard"></div>
-            <div class="imagegridelement"><img src="sample-images/image_10.jpg" id="standard"></div>
-            <div class="imagegridelement"><img src="sample-images/image_1.jpg" id="standard"></div>
-            <div class="imagegridelement"><img src="sample-images/image_2.jpg" id="standard"></div>
-            <div class="imagegridelement"><img src="sample-images/image_3.jpg" id="standard"></div>
-            <div class="imagegridelement"><img src="sample-images/image_4.jpg" id="standard"></div>
-            <div class="imagegridelement"><img src="sample-images/image_5.jpg" id="standard"></div>
-            <div class="imagegridelement"><img src="sample-images/image_6.jpg" id="standard"></div>
-            <div class="imagegridelement"><img src="sample-images/image_7.jpg" id="standard"></div>
-            <div class="imagegridelement"><img src="sample-images/image_8.jpg" id="standard"></div>
-            <div class="imagegridelement"><img src="sample-images/image_9.jpg" id="standard"></div>
-            <div class="imagegridelement"><img src="sample-images/image_10.jpg" id="standard"></div>
+            <div class="imagegridelement pm" id="project2"><img src="sample-images/image_3.jpg" id="standard"></div>
+            <div class="imagegridelement pm" id="project2"><img src="sample-images/image_4.jpg" id="standard"></div>
+            <div class="imagegridelement" id="project2"><img src="sample-images/image_5.jpg" id="standard"></div>
+            <div class="imagegridelement" id="project2"><img src="sample-images/image_6.jpg" id="standard"></div>
+            <div class="imagegridelement" id="project2"><img src="sample-images/image_7.jpg" id="standard"></div>
+            <div class="imagegridelement" id="project2"><img src="sample-images/image_8_big.jpg" id="featured"></div>
+            <div class="imagegridelement" id="project2"><img src="sample-images/image_9.jpg" id="standard"></div>
+            <div class="imagegridelement" id="project2"><img src="sample-images/image_10.jpg" id="standard"></div>
+            <div class="imagegridelement" id="project2"><img src="sample-images/image_1.jpg" id="standard"></div>
+            <div class="imagegridelement" id="project2"><img src="sample-images/image_2.jpg" id="standard"></div>
+            <div class="imagegridelement" id="project2"><img src="sample-images/image_3.jpg" id="standard"></div>
+            <div class="imagegridelement" id="project2"><img src="sample-images/image_4.jpg" id="standard"></div>
+            <div class="imagegridelement" id="project2"><img src="sample-images/image_5.jpg" id="standard"></div>
+            <div class="imagegridelement" id="project2"><img src="sample-images/image_6.jpg" id="standard"></div>
+            <div class="imagegridelement" id="project2"><img src="sample-images/image_7.jpg" id="standard"></div>
+            <div class="imagegridelement" id="project2"><img src="sample-images/image_8.jpg" id="standard"></div>
+            <div class="imagegridelement" id="project2"><img src="sample-images/image_9.jpg" id="standard"></div>
+            <div class="imagegridelement" id="project2"><img src="sample-images/image_10.jpg" id="standard"></div>
+            <div class="imagegridelement" id="project2"><img src="sample-images/image_1.jpg" id="standard"></div>
+            <div class="imagegridelement" id="project2"><img src="sample-images/image_2.jpg" id="standard"></div>
+            <div class="imagegridelement" id="project2"><img src="sample-images/image_3.jpg" id="standard"></div>
+            <div class="imagegridelement" id="project2"><img src="sample-images/image_4.jpg" id="standard"></div>
+            <div class="imagegridelement" id="project2"><img src="sample-images/image_5.jpg" id="standard"></div>
+            <div class="imagegridelement" id="project2"><img src="sample-images/image_6.jpg" id="standard"></div>
+            <div class="imagegridelement" id="project2"><img src="sample-images/image_7.jpg" id="standard"></div>
+            <div class="imagegridelement" id="project2"><img src="sample-images/image_8.jpg" id="standard"></div>
+            <div class="imagegridelement" id="project2"><img src="sample-images/image_9.jpg" id="standard"></div>
+            <div class="imagegridelement" id="project2"><img src="sample-images/image_10.jpg" id="standard"></div>
 
         </div>
 
@@ -94,32 +94,7 @@
   <script type="text/javascript" src="resources/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="resources/js/jquery.imagesloaded.js"></script>
   <script type="text/javascript" src="resources/js/jquery.isotope.min.js"></script>
-  <script>
-  // modified Isotope methods for gutters in masonry
-
-
-  $('#imagegrid').isotope({
-    itemSelector : '.imagegridelement',
-    masonry : {
-          columnWidth : 210
-        },
-  });
-
-  // filter items when filter link is clicked
-  $('#filters button').click(function(){
-    var selector = $(this).attr('data-filter');
-    $('#imagegrid').isotope({ filter: selector });
-    $('.detailview').fadeOut(500);
-    return false;
-  });
-
-  $('.imagegridelement').click(function(){
-    $('#imagegrid').isotope({ filter: '#nothing'});
-    $('.detailview').fadeIn(500);
-
-  })
-
-
-  </script>
+  <script type="text/javascript" src="resources/js/jquery.hashchanged.js"></script>
+  <script type="text/javascript" src="resources/js/portfolio.js"></script>
   </body>
 </html>
