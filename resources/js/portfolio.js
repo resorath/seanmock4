@@ -4,8 +4,6 @@ if(window.location.hash == "")
 
 $(window).hashchange( function(){
   var hash = window.location.hash;
-  alert(hash);
-
   // process filters
   if(hash.indexOf("#filter/") == 0)
   {
