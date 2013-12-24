@@ -66,6 +66,7 @@ footer p
 	cursor: pointer;
 }
 
+
 .imagegridelement > img#featured
 {
 	width: 410px;
@@ -76,4 +77,27 @@ footer p
 {
 	width: 200px;
 	height: 200px;
+}
+
+/* iPhone or devices that can't fit the 410px image */
+@media screen and (max-device-width: 320px), screen and (max-width: 420px){
+
+	.imagegridelement > img#featured
+	{
+		width: 310px;
+		height: 310px;
+	}
+
+	.imagegridelement > img#standard
+	{
+		width: 153px;
+		height: 153px;
+	}
+
+	.imagegridelement
+	{
+		margin: 2px;
+		cursor: pointer;
+
+	}
 }

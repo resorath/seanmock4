@@ -26,12 +26,13 @@ $(window).hashchange( function(){
 
 $(window).hashchange();
 
+var colWidth = $('.imagegridelement > img#standard').outerWidth() + ($('.imagegridelement').css('margin').replace(/[^-\d\.]/g, '') * 2);
 
 // Load isotope to handle image grid transitions
 $('#imagegrid').isotope({
   itemSelector : '.imagegridelement',
   masonry : {
-        columnWidth : 210
+        columnWidth : colWidth
       },
 });
 
@@ -48,6 +49,17 @@ $('#filters button').click(function(){
 $('.imagegridelement').click(function(){
   drill($(this).attr('id'))
 })
+
+// Change the masonry columns on resize to match the smallest image (instead of the default first image)
+$(window).resize(function(){
+
+  $('#imagegrid').isotope({
+    masonry: {
+      columnWidth: colWidth
+    }
+  });
+
+});
 
 // Animators
 function applyFilter(selector)
