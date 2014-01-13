@@ -27,6 +27,10 @@ $(window).hashchange( function(){
 $(window).hashchange();
 
 var colWidth = $('.imagegridelement > img#standard').outerWidth() + ($('.imagegridelement').css('margin').replace(/[^-\d\.]/g, '') * 2);
+console.log(colWidth);
+// mobile hack
+if(colWidth > 160)
+  colWidth = '105';
 
 // Load isotope to handle image grid transitions
 $('#imagegrid').isotope({
