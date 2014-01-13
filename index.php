@@ -10,6 +10,7 @@
     <link href="resources/css/bootstrap.min.css" rel="stylesheet">
     <link href="resources/css/isotope.css" rel="stylesheet">
     <link href="resources/css/style.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -44,36 +45,41 @@
 
       <section id="portfolio">
         <div id="imagegrid">
-            <div class="imagegridelement ux" id="project1"><img src="sample-images/image_1_big.jpg" id="featured"></div>
-            <div class="imagegridelement web" id="project2"><img src="sample-images/image_2.jpg" id="standard"></div>
-            <div class="imagegridelement pm" id="project2"><img src="sample-images/image_3.jpg" id="standard"></div>
-            <div class="imagegridelement pm" id="project2"><img src="sample-images/image_4.jpg" id="standard"></div>
-            <div class="imagegridelement" id="project2"><img src="sample-images/image_5.jpg" id="standard"></div>
-            <div class="imagegridelement" id="project2"><img src="sample-images/image_6.jpg" id="standard"></div>
-            <div class="imagegridelement" id="project2"><img src="sample-images/image_7.jpg" id="standard"></div>
-            <div class="imagegridelement" id="project2"><img src="sample-images/image_8_big.jpg" id="featured"></div>
-            <div class="imagegridelement" id="project2"><img src="sample-images/image_9.jpg" id="standard"></div>
-            <div class="imagegridelement" id="project2"><img src="sample-images/image_10.jpg" id="standard"></div>
-            <div class="imagegridelement" id="project2"><img src="sample-images/image_1.jpg" id="standard"></div>
-            <div class="imagegridelement" id="project2"><img src="sample-images/image_2.jpg" id="standard"></div>
-            <div class="imagegridelement" id="project2"><img src="sample-images/image_3.jpg" id="standard"></div>
-            <div class="imagegridelement" id="project2"><img src="sample-images/image_4.jpg" id="standard"></div>
-            <div class="imagegridelement" id="project2"><img src="sample-images/image_5.jpg" id="standard"></div>
-            <div class="imagegridelement" id="project2"><img src="sample-images/image_6.jpg" id="standard"></div>
-            <div class="imagegridelement" id="project2"><img src="sample-images/image_7.jpg" id="standard"></div>
-            <div class="imagegridelement" id="project2"><img src="sample-images/image_8.jpg" id="standard"></div>
-            <div class="imagegridelement" id="project2"><img src="sample-images/image_9.jpg" id="standard"></div>
-            <div class="imagegridelement" id="project2"><img src="sample-images/image_10.jpg" id="standard"></div>
-            <div class="imagegridelement" id="project2"><img src="sample-images/image_1.jpg" id="standard"></div>
-            <div class="imagegridelement" id="project2"><img src="sample-images/image_2.jpg" id="standard"></div>
-            <div class="imagegridelement" id="project2"><img src="sample-images/image_3.jpg" id="standard"></div>
-            <div class="imagegridelement" id="project2"><img src="sample-images/image_4.jpg" id="standard"></div>
-            <div class="imagegridelement" id="project2"><img src="sample-images/image_5.jpg" id="standard"></div>
-            <div class="imagegridelement" id="project2"><img src="sample-images/image_6.jpg" id="standard"></div>
-            <div class="imagegridelement" id="project2"><img src="sample-images/image_7.jpg" id="standard"></div>
-            <div class="imagegridelement" id="project2"><img src="sample-images/image_8.jpg" id="standard"></div>
-            <div class="imagegridelement" id="project2"><img src="sample-images/image_9.jpg" id="standard"></div>
-            <div class="imagegridelement" id="project2"><img src="sample-images/image_10.jpg" id="standard"></div>
+            <div class="imagegridelement ux featured" id="project1"><img src="sample-images/image_1_big.jpg" id="featured">
+              <span><h2>Text test</h2></span>
+            </div>
+
+            <div class="imagegridelement web standard" id="project2"><img src="sample-images/image_2.jpg" id="standard">
+              <span><h2>Text test</h2></span>
+            </div>
+            <div class="imagegridelement pm standard" id="project2"><img src="sample-images/image_3.jpg" id="standard"></div>
+            <div class="imagegridelement pm standard" id="project2"><img src="sample-images/image_4.jpg" id="standard"></div>
+            <div class="imagegridelement standard" id="project2"><img src="sample-images/image_5.jpg" id="standard"></div>
+            <div class="imagegridelement standard" id="project2"><img src="sample-images/image_6.jpg" id="standard"></div>
+            <div class="imagegridelement standard" id="project2"><img src="sample-images/image_7.jpg" id="standard"></div>
+            <div class="imagegridelement featured" id="project2"><img src="sample-images/image_8_big.jpg" id="featured"></div>
+            <div class="imagegridelement standard" id="project2"><img src="sample-images/image_9.jpg" id="standard"></div>
+            <div class="imagegridelement standard" id="project2"><img src="sample-images/image_10.jpg" id="standard"></div>
+            <div class="imagegridelement standard" id="project2"><img src="sample-images/image_1.jpg" id="standard"></div>
+            <div class="imagegridelement standard" id="project2"><img src="sample-images/image_2.jpg" id="standard"></div>
+            <div class="imagegridelement standard" id="project2"><img src="sample-images/image_3.jpg" id="standard"></div>
+            <div class="imagegridelement standard" id="project2"><img src="sample-images/image_4.jpg" id="standard"></div>
+            <div class="imagegridelement standard" id="project2"><img src="sample-images/image_5.jpg" id="standard"></div>
+            <div class="imagegridelement standard" id="project2"><img src="sample-images/image_6.jpg" id="standard"></div>
+            <div class="imagegridelement standard" id="project2"><img src="sample-images/image_7.jpg" id="standard"></div>
+            <div class="imagegridelement standard" id="project2"><img src="sample-images/image_8.jpg" id="standard"></div>
+            <div class="imagegridelement standard" id="project2"><img src="sample-images/image_9.jpg" id="standard"></div>
+            <div class="imagegridelement standard" id="project2"><img src="sample-images/image_10.jpg" id="standard"></div>
+            <div class="imagegridelement standard" id="project2"><img src="sample-images/image_1.jpg" id="standard"></div>
+            <div class="imagegridelement standard" id="project2"><img src="sample-images/image_2.jpg" id="standard"></div>
+            <div class="imagegridelement standard" id="project2"><img src="sample-images/image_3.jpg" id="standard"></div>
+            <div class="imagegridelement standard" id="project2"><img src="sample-images/image_4.jpg" id="standard"></div>
+            <div class="imagegridelement standard" id="project2"><img src="sample-images/image_5.jpg" id="standard"></div>
+            <div class="imagegridelement standard" id="project2"><img src="sample-images/image_6.jpg" id="standard"></div>
+            <div class="imagegridelement standard" id="project2"><img src="sample-images/image_7.jpg" id="standard"></div>
+            <div class="imagegridelement standard" id="project2"><img src="sample-images/image_8.jpg" id="standard"></div>
+            <div class="imagegridelement standard" id="project2"><img src="sample-images/image_9.jpg" id="standard"></div>
+            <div class="imagegridelement standard" id="project2"><img src="sample-images/image_10.jpg" id="standard"></div>
 
         </div>
 

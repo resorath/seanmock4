@@ -64,7 +64,59 @@ footer p
 {
 	margin: 5px;
 	cursor: pointer;
+	position: relative;
 }
+
+.imagegridelement.featured > span
+{
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	width: 100%;
+	height: 12%;
+
+	background-color: rgba(100, 100, 100, 0.4);
+}
+
+.imagegridelement.standard > span
+{
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	width: 100%;
+	height: 20%;
+
+	background-color: rgba(100, 100, 100, 0.4);
+}
+
+.imagegridelement span > h2
+{
+	margin-left: 10px;
+	color: white;
+    text-shadow:
+    -2px -2px 0.5 #000,
+    2px -2px 0.5 #000,
+    -2px 2px 0.5 #000,
+    2px 2px 0.5 #000; 
+
+
+	font-family: 'Open Sans', sans-serif; 
+}
+
+.imagegridelement.standard span > h2
+{
+	font-size: 16px;
+	font-weight: bolder;
+	position: absolute;
+	bottom: 0px;
+}
+
+.imagegridelement.featured span > h2
+{
+	position: absolute;
+	bottom: 0px;
+}
+
 
 
 .imagegridelement > img#featured
