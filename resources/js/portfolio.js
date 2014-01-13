@@ -1,3 +1,7 @@
+if ('ontouchstart' in document) {
+    $('body').removeClass('no-touch');
+}
+
 // Navigation
 if(window.location.hash == "")
   window.location.hash = "#home";
@@ -53,6 +57,26 @@ $('#filters button').click(function(){
 $('.imagegridelement').click(function(){
   drill($(this).attr('id'))
 })
+
+$('.imagegridelement').hover(function() {
+
+   $('.imagegridelement').not(this).each(function(){
+       $(this).fadeTo(0.2, 0.5);
+   });
+}, function() {
+   $('.imagegridelement').each(function(){
+       $(this).fadeTo(0.2, 1);
+   });
+});
+
+/*
+$('.imagegridelement').hover(function(){
+   $(this).children('img').animate({ height: $(this).height()*1.05, width: $(this).width()*1.05 }, "fast");
+   $(this).animate({left: "-=5", top: "-=5"}, "fast");
+}, function() {
+   $(this).children('img').animate({ height: $(this).height()*(1/1.05), width: $(this).width()*(1/1.05) }, "fast");
+   $(this).animate({left: "+=5", top: "+=5"}, "fast");
+})*/
 
 // Change the masonry columns on resize to match the smallest image (instead of the default first image)
 $(window).resize(function(){

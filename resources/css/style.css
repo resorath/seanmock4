@@ -4,6 +4,10 @@ html {
 	background-color: #FFFFFF;
 }
 
+.no-touch my:hover{
+   color: red;
+}
+
 
 header h1 {
 	text-align: center;
@@ -67,6 +71,7 @@ footer p
 	position: relative;
 }
 
+
 .imagegridelement.featured > span
 {
 	position: absolute;
@@ -94,10 +99,10 @@ footer p
 	margin-left: 10px;
 	color: white;
     text-shadow:
-    -2px -2px 0.5 #000,
-    2px -2px 0.5 #000,
-    -2px 2px 0.5 #000,
-    2px 2px 0.5 #000; 
+    -2px -2px 1px #000,
+    2px -2px 1px #000,
+    -2px 2px 1px #000,
+    2px 2px 1px #000; 
 
 
 	font-family: 'Open Sans', sans-serif; 
