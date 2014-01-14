@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"rg",
+				"rgba()"
+			],
+			[
 				"hover",
 				"hoverHightlightCells"
 			],
@@ -43,24 +47,15 @@
 			"file": "index.php",
 			"settings":
 			{
-				"buffer_size": 6122,
+				"buffer_size": 6628,
 				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "resources/js/jquery.hashchanged.js",
-			"settings":
-			{
-				"buffer_size": 16409,
-				"line_ending": "Windows",
-				"name": "/*"
 			}
 		},
 		{
 			"file": "resources/css/style.css",
 			"settings":
 			{
-				"buffer_size": 884,
+				"buffer_size": 2023,
 				"line_ending": "Windows"
 			}
 		},
@@ -77,7 +72,7 @@
 			"file": "resources/js/portfolio.js",
 			"settings":
 			{
-				"buffer_size": 1322,
+				"buffer_size": 2503,
 				"line_ending": "Windows"
 			}
 		}
@@ -126,6 +121,8 @@
 	},
 	"file_history":
 	[
+		"/E/xampp/htdocs/seanmock4/resources/js/jquery.hashchanged.js",
+		"/E/xampp/htdocs/seanfeilweb/css/style5.css",
 		"/E/xampp/htdocs/seanmock4/resources/css/wookmark.css",
 		"/E/xampp/htdocs/seanmock4/resources/js/jquery.isotope.min.js",
 		"/E/xampp/htdocs/seanmock4/resources/css/reset.css",
@@ -252,7 +249,7 @@
 	],
 	"find":
 	{
-		"height": 37.0
+		"height": 34.0
 	},
 	"find_in_files":
 	{
@@ -269,6 +266,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"imagegridelement",
+			"180",
+			"max",
 			"msie",
 			"width=\"200\" height=\"200\"",
 			"200px",
@@ -379,15 +379,15 @@
 					"file": "index.php",
 					"settings":
 					{
-						"buffer_size": 6122,
+						"buffer_size": 6628,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								136,
-								139
+								145,
+								145
 							]
 						],
 						"settings":
@@ -401,33 +401,6 @@
 						"zoom_level": 1.0
 					},
 					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "resources/js/jquery.hashchanged.js",
-					"settings":
-					{
-						"buffer_size": 16409,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								6171,
-								6173
-							]
-						],
-						"settings":
-						{
-							"auto_name": "/*",
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 1422.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
 				}
 			]
 		},
@@ -436,19 +409,19 @@
 			"sheets":
 			[
 				{
-					"buffer": 2,
+					"buffer": 1,
 					"file": "resources/css/style.css",
 					"settings":
 					{
-						"buffer_size": 884,
+						"buffer_size": 2023,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								594,
-								593
+								152,
+								152
 							]
 						],
 						"settings":
@@ -457,13 +430,13 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1092.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 3,
+					"buffer": 2,
 					"file": "resources/css/isotope.css",
 					"settings":
 					{
@@ -474,8 +447,8 @@
 						"selection":
 						[
 							[
-								453,
-								453
+								5,
+								5
 							]
 						],
 						"settings":
@@ -492,19 +465,19 @@
 					"type": "text"
 				},
 				{
-					"buffer": 4,
+					"buffer": 3,
 					"file": "resources/js/portfolio.js",
 					"settings":
 					{
-						"buffer_size": 1322,
+						"buffer_size": 2503,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								148,
-								148
+								345,
+								345
 							]
 						],
 						"settings":
@@ -550,7 +523,7 @@
 		"cols":
 		[
 			0.0,
-			0.595377413693,
+			0.5,
 			1.0
 		],
 		"rows":

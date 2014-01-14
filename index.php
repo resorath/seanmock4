@@ -35,6 +35,7 @@
       </section>
 
       <section id="filter">
+        <span class="glyphicon glyphicon-filter"></span>
         <div id="filters" class="btn-group  btn-group-xs">
           <button type="button" class="btn btn-default" data-filter="*">Show All Work</button>
           <button type="button" class="btn btn-default" data-filter=".ux">UX and Frontend Design</button>
@@ -84,12 +85,15 @@
         </div>
 
         <div class="container detailview">
-          lorum ipsum DOLAN
+          <div class="float-left"><img src="sample-images/image_3.jpg"></div>
+          <div class="float-right">div div</div>
+          <h2>Project Name</h2>
+          <p>Text text text</p>
         </div>
       </section>
 
       <footer>
-        <p>Copyright &copy Sean Feil 2013. </p>
+        <p>Copyright &copy Sean Feil 2014. </p>
 
       </footer>
   </div>
@@ -101,6 +105,7 @@
   <script type="text/javascript" src="resources/js/jquery.imagesloaded.js"></script>
   <script type="text/javascript" src="resources/js/jquery.isotope.min.js"></script>
   <script type="text/javascript" src="resources/js/jquery.hashchanged.js"></script>
+  <script type="text/javascript" src="resources/js/jquery.color.js"></script>
   <script type="text/javascript" src="resources/js/portfolio.js"></script>
   </body>
 </html>

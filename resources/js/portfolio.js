@@ -1,3 +1,4 @@
+// Hover fix for mobile
 if ('ontouchstart' in document) {
     $('body').removeClass('no-touch');
 }
@@ -95,6 +96,11 @@ function applyFilter(selector)
   window.location.hash = "filter/" + selector;
   $('#imagegrid').isotope({ filter: selector });
   $('.detailview').fadeOut(500);
+
+  $('html, body').animate({
+    backgroundColor: '#FFFFFF'
+  }, 1000);
+
 }
 
 function removeImages()
@@ -107,4 +113,7 @@ function drill(project)
 {
   removeImages();
   window.location.hash = "details/" + project;
+  $('html, body').animate({
+    backgroundColor: '#CCCCCC'
+  }, 1000);
 }

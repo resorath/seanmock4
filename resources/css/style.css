@@ -49,6 +49,34 @@ footer p
 	display: none;
 	margin-top: 50px;
 	margin-bottom: 50px;
+	background-color: #FFFFFF;
+	border-radius: 5px 5px 5px 5px;
+	min-height: 400px;
+	padding: 10px 10px 10px 10px;
+}
+
+.detailview > .float-left
+{
+	float: left;
+}
+
+.detailview > .float-left > img
+{
+	width: 300px;
+	height: 300px;
+	border-radius: 8px 8px 8px 8px;
+	border: outset 8px gold;
+	margin: 5px 15px 5px 5px;
+}
+
+.detailview > h2
+{
+	margin-top: 5px;
+}
+
+.detailview > .float-right
+{
+	float: right;
 }
 
 
@@ -155,6 +183,34 @@ footer p
 	{
 		margin: 2px;
 		cursor: pointer;
-
 	}
+}
+
+/* Bootstrap overrides */
+.btn-group.btn-group-xs > .btn{
+	margin-right: 5px;
+	border-top-right-radius: 5px !important;
+	border-top-left-radius: 5px !important;
+	border-bottom-right-radius: 5px !important;
+	border-bottom-left-radius: 5px !important;
+	background-color: #EEEEEE;
+}
+
+.btn-group{
+	margin-bottom: 10px;
+}
+
+.btn-group.btn-group-xs > .btn:hover{
+	background-color: #FFFFFF;
+}
+
+.btn-primary.btn-wide{
+	margin-left: 5px;
+	margin-right: 5px;
+	background-color: #00BB99;
+	box-shadow: 0 0 7px #000000;
+}
+
+.btn-primary.btn-wide:hover{
+	box-shadow: inset 0 0 7px #FFFFFF;
 }
