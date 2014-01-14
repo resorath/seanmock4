@@ -91,12 +91,14 @@ $(window).resize(function(){
 });
 
 // Animators
+
+var inDetailViewContext = false;
 function applyFilter(selector)
 {
   window.location.hash = "filter/" + selector;
   $('#imagegrid').isotope({ filter: selector });
   $('.detailview').fadeOut(500);
-
+  inDetailViewContext = false;
   $('html, body').animate({
     backgroundColor: '#FFFFFF'
   }, 1000);
@@ -113,7 +115,17 @@ function drill(project)
 {
   removeImages();
   window.location.hash = "details/" + project;
+  inDetailViewContext = true;
   $('html, body').animate({
     backgroundColor: '#CCCCCC'
   }, 1000);
 }
+
+$(document).bind('click', function (e) {
+  if(inDetailViewContext)
+    applyFilter("*");
+});
+
+$('.detailview').bind('click', function(e) {
+    e.stopPropagation();
+});
