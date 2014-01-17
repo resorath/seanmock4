@@ -93,11 +93,14 @@ $(window).resize(function(){
 // Animators
 
 var inDetailViewContext = false;
+var lastfilter = null;
+
 function applyFilter(selector)
 {
   window.location.hash = "filter/" + selector;
   $('#imagegrid').isotope({ filter: selector });
   $('.detailview').fadeOut(500);
+  lastfilter = window.location.hash.substring(8);
   inDetailViewContext = false;
   $('html, body').animate({
     backgroundColor: '#FFFFFF'
@@ -123,7 +126,12 @@ function drill(project)
 
 $(document).bind('click', function (e) {
   if(inDetailViewContext)
-    applyFilter("*");
+  {
+    if(lastfilter != null)
+      applyFilter(lastfilter);
+    else
+      applyFilter("*");
+  }
 });
 
 $('.detailview').bind('click', function(e) {

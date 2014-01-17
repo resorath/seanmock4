@@ -86,7 +86,10 @@
 
         <div class="container detailview">
           <div class="float-left"><img src="sample-images/image_3.jpg"></div>
-          <div class="float-right">div div</div>
+          <div class="float-right">
+            <button class="btn">More Screenshots</button>
+            <button class="btn">Live Site</button>
+          </div>
           <h2>Project Name</h2>
           <p>Text text text</p>
         </div>

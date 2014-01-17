@@ -47,7 +47,7 @@
 			"file": "index.php",
 			"settings":
 			{
-				"buffer_size": 6628,
+				"buffer_size": 7039,
 				"line_ending": "Windows"
 			}
 		},
@@ -55,7 +55,7 @@
 			"file": "resources/css/style.css",
 			"settings":
 			{
-				"buffer_size": 2023,
+				"buffer_size": 2999,
 				"line_ending": "Windows"
 			}
 		},
@@ -72,7 +72,7 @@
 			"file": "resources/js/portfolio.js",
 			"settings":
 			{
-				"buffer_size": 2503,
+				"buffer_size": 3061,
 				"line_ending": "Windows"
 			}
 		}
@@ -121,6 +121,10 @@
 	},
 	"file_history":
 	[
+		"/C/Users/Sean/AppData/Local/Temp/Rar$DR05.840/bootstrap-3.0.3/fonts/glyphicons-halflings-regular.svg",
+		"/C/Users/Sean/AppData/Local/Temp/Rar$DR05.840/bootstrap-3.0.3/fonts/glyphicons-halflings-regular.ttf",
+		"/C/Users/Sean/AppData/Local/Temp/Rar$DR05.840/bootstrap-3.0.3/fonts/glyphicons-halflings-regular.woff",
+		"/C/Users/Sean/AppData/Local/Temp/Rar$DR05.840/bootstrap-3.0.3/fonts/glyphicons-halflings-regular.eot",
 		"/E/xampp/htdocs/seanmock4/resources/js/jquery.hashchanged.js",
 		"/E/xampp/htdocs/seanfeilweb/css/style5.css",
 		"/E/xampp/htdocs/seanmock4/resources/css/wookmark.css",
@@ -244,8 +248,7 @@
 		"/E/xampp/htdocs/vortex.tophatandmonocle.com/index.php",
 		"/E/xampp/htdocs/seanfeilcom/jquery.parallax.js",
 		"/E/xampp/htdocs/seanfeilcom/jquery.localscroll-min.js",
-		"/E/xampp/htdocs/seanfeilcom/jquery.scrollTo-min.js",
-		"/E/xampp/htdocs/seanfeilcom/jquery.color.js"
+		"/E/xampp/htdocs/seanfeilcom/jquery.scrollTo-min.js"
 	],
 	"find":
 	{
@@ -379,15 +382,15 @@
 					"file": "index.php",
 					"settings":
 					{
-						"buffer_size": 6628,
+						"buffer_size": 7039,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								145,
-								145
+								4173,
+								4173
 							]
 						],
 						"settings":
@@ -397,7 +400,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 504.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -405,7 +408,7 @@
 			]
 		},
 		{
-			"selected": 2,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -413,15 +416,15 @@
 					"file": "resources/css/style.css",
 					"settings":
 					{
-						"buffer_size": 2023,
+						"buffer_size": 2999,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								152,
-								152
+								2928,
+								2928
 							]
 						],
 						"settings":
@@ -430,7 +433,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1092.0,
+						"translation.y": 2446.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -469,15 +472,15 @@
 					"file": "resources/js/portfolio.js",
 					"settings":
 					{
-						"buffer_size": 2503,
+						"buffer_size": 3061,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								345,
-								345
+								2816,
+								2816
 							]
 						],
 						"settings":
@@ -487,7 +490,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1095.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -523,7 +526,7 @@
 		"cols":
 		[
 			0.0,
-			0.5,
+			0.559684025746,
 			1.0
 		],
 		"rows":
