@@ -15,6 +15,14 @@
 
 		public function getAllEntries()
 		{
+			$q = "SELECT `portfolio`.`id`, `name`, `type`, `siteurl`, `shortname`, GROUP_CONCAT(distinct `imageurl`) as imgurl, GROUP_CONCAT(distinct `thumburl`) as thumburl, GROUP_CONCAT(distinct `tag`) as tag FROM `portfolio` JOIN `portfolio_images` on `portfolio`.`id` = `portfolio_images`.`portfolio_id` JOIN `portfolio_tags` on `portfolio`.`id` = `portfolio_tags`.`portfolio_id`";
+
+			return $this->db->query($q);
+
+		} 
+
+		public function getAllData()
+		{
 			$q = "SELECT * FROM `portfolio`";
 
 			return $this->db->query($q);

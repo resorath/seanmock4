@@ -1,4 +1,10 @@
-<!DOCTYPE html>
+<?php
+  require_once("bll/portfolioExpert.php");
+  $db = new portfolioExpert();
+
+  $entries = $db->getAllData();
+
+?><!DOCTYPE html>
 <html>
   <head>
     <title>Sean Feil Portfolio</title>
