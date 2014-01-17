@@ -2,7 +2,7 @@
   require_once("bll/portfolioExpert.php");
   $db = new portfolioExpert();
 
-  $entries = $db->getAllData();
+  $entries = $db->getAllEntries();
 
 ?><!DOCTYPE html>
 <html>
@@ -52,6 +52,13 @@
 
       <section id="portfolio">
         <div id="imagegrid">
+
+            <?php while($entry = $entries->fetch_assoc()): ?>
+              <div class="imagegridelement <?=$entry['tags'] ?> <?=$entry['type'] ?>" id="<?=$entry['shortname'] ?>"><img src="img/<?=$entry['thumburl'] ?>" id="<?=$entry['type'] ?>">
+              <span><h2><?=$entry['name'] ?></h2></span>
+            </div>
+
+          <?php endwhile ?>
             <div class="imagegridelement ux featured" id="project1"><img src="sample-images/image_1_big.jpg" id="featured">
               <span><h2>Text test</h2></span>
             </div>
