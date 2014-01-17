@@ -30,7 +30,7 @@
 	<body> 
 		<div class="container">
 			<h2>Edit Entry</h2>
-			<form method="post" action="edit.php" enctype="application/x-www-form-urlencoded">
+			<form method="post" action="edit.php" enctype="multipart/form-data">
 
 				<input type="hidden" name="id" value="<?=@$entry['id'] ?>">
 
@@ -70,6 +70,24 @@
 						<option value="pm" id="pm">Project Management</option>
 						<option value="web" id="web">Web Development</option>
 					</select>
+				</div>
+
+				<div class="form-group">
+					<label for="tags">Images</label>
+					<input type="file" name="images[]" class="form-control">
+					<input type="file" name="thumbs[]" class="form-control">
+					<input type="file" name="images[]" class="form-control">
+					<input type="file" name="thumbs[]" class="form-control">
+					<input type="file" name="images[]" class="form-control">
+					<input type="file" name="thumbs[]" class="form-control">
+					<input type="file" name="images[]" class="form-control">
+					<input type="file" name="thumbs[]" class="form-control">
+					<input type="file" name="images[]" class="form-control">
+					<input type="file" name="thumbs[]" class="form-control">
+					<input type="file" name="images[]" class="form-control">
+					<input type="file" name="thumbs[]" class="form-control">
+					<input type="file" name="images[]" class="form-control">
+					<input type="file" name="thumbs[]" class="form-control">
 				</div>
 
 				<input type="submit" class="btn btn-primary" value="Perform">

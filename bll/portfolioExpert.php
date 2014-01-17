@@ -55,6 +55,10 @@
 			// new
 			else
 			{
+
+
+				// do statements
+
 				$q = "INSERT INTO portfolio(`name`, `description`, `type`, `siteurl`, `shortname`) VALUES(?, ?, ?, ?, ?)";
 
 				$statement = $this->db->prepare($q);
@@ -72,12 +76,54 @@
 					$statement->bind_param("is", $lastid, $tag);
 					$statement->execute();
 				}
+
+
+				// do uploads
+
+				$images_tmp = $_FILES['images']['tmp_name'];
+				$images_name = $_FILES['images']['name'];
+				$images_error = $_FILES['images']['error'];
+
+				$thumbs_tmp = $_FILES['thumbs']['tmp_name'];
+				$thumbs_name = $_FILES['thumbs']['name'];
+				$thumbs_error = $_FILES['thumbs']['error'];
+
+
+
+				for($i = 0; $i < sizeof($images_tmp); $i++)
+				{
+					if($images_error[$i] == 0)
+						move_uploaded_file($images_tmp[$i], "img/" . $images_name[$i]);
+				}
+
+				for($i = 0; $i < sizeof($thumbs_tmp); $i++)
+				{
+					if($thumbs_error[$i] == 0)
+						move_uploaded_file($thumbs_tmp[$i], "img/" . $thumbs_name[$i]);
+				}
+
+				// more queries
+				$q = "INSERT INTO portfolio_images(`portfolio_id`, `imageurl`, `thumburl`, `isPrimary`) VALUES(?, ?, ?, ?)";
+
+				$statement = $this->db->prepare($q);
+
+				$primary = true;
+				for($i = 0; $i < sizeof($images_tmp); $i++)
+				{
+					if($images_error[$i] == 0)
+					{
+						if($i > 0)
+							$primary = false;
+
+						$statement->bind_param("issi", $lastid, $images_name[$i], $thumbs_name[$i], $primary);
+						$statement->execute();
+					}
+				}
+
 			}
 
 
 		}
-
-
 
 	}
 
