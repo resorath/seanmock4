@@ -47,7 +47,31 @@
 			"file": "index.php",
 			"settings":
 			{
-				"buffer_size": 7039,
+				"buffer_size": 7510,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "modify.php",
+			"settings":
+			{
+				"buffer_size": 1603,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "edit.php",
+			"settings":
+			{
+				"buffer_size": 4286,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "bll/portfolioExpert.php",
+			"settings":
+			{
+				"buffer_size": 3285,
 				"line_ending": "Windows"
 			}
 		},
@@ -121,6 +145,10 @@
 	},
 	"file_history":
 	[
+		"/E/xampp/htdocs/seanmock4/resources/js/jquery.animate.enhanced.min.js",
+		"/E/xampp/htdocs/seanmock4/img/thunder.png",
+		"/E/xampp/htdocs/seanmock4/test.php",
+		"/C/Users/Sean/AppData/Local/Temp/Rar$DR57.504/select2-3.4.5/select2.css",
 		"/C/Users/Sean/AppData/Local/Temp/Rar$DR05.840/bootstrap-3.0.3/fonts/glyphicons-halflings-regular.svg",
 		"/C/Users/Sean/AppData/Local/Temp/Rar$DR05.840/bootstrap-3.0.3/fonts/glyphicons-halflings-regular.ttf",
 		"/C/Users/Sean/AppData/Local/Temp/Rar$DR05.840/bootstrap-3.0.3/fonts/glyphicons-halflings-regular.woff",
@@ -244,11 +272,7 @@
 		"/E/xampp/htdocs/ugod/application/config/user_agents.php",
 		"/E/xampp/htdocs/seanfeilcom/index.php",
 		"/E/xampp/htdocs/seanfeilcom/com.seanfeil.js",
-		"/E/xampp/htdocs/seanfeilcom/style.css",
-		"/E/xampp/htdocs/vortex.tophatandmonocle.com/index.php",
-		"/E/xampp/htdocs/seanfeilcom/jquery.parallax.js",
-		"/E/xampp/htdocs/seanfeilcom/jquery.localscroll-min.js",
-		"/E/xampp/htdocs/seanfeilcom/jquery.scrollTo-min.js"
+		"/E/xampp/htdocs/seanfeilcom/style.css"
 	],
 	"find":
 	{
@@ -269,6 +293,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"animate",
 			"imagegridelement",
 			"180",
 			"max",
@@ -382,15 +407,15 @@
 					"file": "index.php",
 					"settings":
 					{
-						"buffer_size": 7039,
+						"buffer_size": 7510,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4173,
-								4173
+								3348,
+								3348
 							]
 						],
 						"settings":
@@ -400,7 +425,34 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 504.0,
+						"translation.y": 501.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "modify.php",
+					"settings":
+					{
+						"buffer_size": 1603,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1270,
+								1235
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 42.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -408,11 +460,65 @@
 			]
 		},
 		{
-			"selected": 0,
+			"selected": 4,
 			"sheets":
 			[
 				{
-					"buffer": 1,
+					"buffer": 2,
+					"file": "edit.php",
+					"settings":
+					{
+						"buffer_size": 4286,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								541,
+								541
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "bll/portfolioExpert.php",
+					"settings":
+					{
+						"buffer_size": 3285,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								54,
+								54
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
 					"file": "resources/css/style.css",
 					"settings":
 					{
@@ -439,7 +545,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 2,
+					"buffer": 5,
 					"file": "resources/css/isotope.css",
 					"settings":
 					{
@@ -468,7 +574,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 3,
+					"buffer": 6,
 					"file": "resources/js/portfolio.js",
 					"settings":
 					{
@@ -479,8 +585,8 @@
 						"selection":
 						[
 							[
-								2816,
-								2816
+								2761,
+								2768
 							]
 						],
 						"settings":
@@ -490,7 +596,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1095.0,
+						"translation.y": 1194.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -526,7 +632,7 @@
 		"cols":
 		[
 			0.0,
-			0.559684025746,
+			0.643358689292,
 			1.0
 		],
 		"rows":

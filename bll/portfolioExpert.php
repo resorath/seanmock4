@@ -21,6 +21,7 @@
 			return $this->db->query($q);
 
 		} 
+
 		public function getEntry($id)
 		{
 			$q = "SELECT * FROM `portfolio` where `id` = ?";
@@ -35,6 +36,21 @@
 
 			return $res->fetch_assoc();
 
+		}
+
+		public function getProject($projectName)
+		{
+			$q = "SELECT `portfolio`.`id`, `name`, `type`, `siteurl`, `description`, `shortname`, GROUP_CONCAT(distinct `imageurl`) as imgurl, GROUP_CONCAT(distinct `thumburl`) as thumburl, GROUP_CONCAT(distinct `tag` SEPARATOR ' ') as tags FROM `portfolio` LEFT JOIN `portfolio_images` on `portfolio`.`id` = `portfolio_images`.`portfolio_id` LEFT JOIN `portfolio_tags` on `portfolio`.`id` = `portfolio_tags`.`portfolio_id` WHERE `shortname` = ? GROUP BY `portfolio`.`id`, `name`, `type`, `siteurl`, `shortname`";
+
+			$statement = $this->db->prepare($q);
+
+			$statement->bind_param("s", $projectName);
+
+			$statement->execute();
+
+			$res = $statement->get_result();
+
+			return $res->fetch_assoc();
 		}
 
 		public function editEntry($postdata)

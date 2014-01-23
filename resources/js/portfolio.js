@@ -18,7 +18,7 @@ $(window).hashchange( function(){
   // process details
   if(hash.indexOf("#details/") == 0)
   {
-    drill(hash.substring(9));
+    //drill(hash.substring(9));
 
   }
   // process home
@@ -32,7 +32,7 @@ $(window).hashchange( function(){
 $(window).hashchange();
 
 var colWidth = $('.imagegridelement > img#standard').outerWidth() + ($('.imagegridelement').css('margin').replace(/[^-\d\.]/g, '') * 2);
-console.log(colWidth);
+
 // mobile hack
 if(colWidth > 160)
   colWidth = '105';
@@ -93,7 +93,9 @@ $(window).resize(function(){
 // Animators
 
 var inDetailViewContext = false;
+var inFancyBoxView = false;
 var lastfilter = null;
+var loaderHtml = null;
 
 function applyFilter(selector)
 {
@@ -105,6 +107,7 @@ function applyFilter(selector)
   $('html, body').animate({
     backgroundColor: '#FFFFFF'
   }, 1000);
+  $('#detailview').html(loaderHtml);
 
 }
 
@@ -116,24 +119,55 @@ function removeImages()
 
 function drill(project)
 {
+  loaderHtml = $('#detailview').html();
+  /*$.get('details.php?project=' + project, function(data){
+    $('#detailview').html(data);
+  })*/
+  $('#detailview').load('details.php?project=' + project, function(response, status, xhr)
+  {
+    if(status == "success")
+    {
+      $('.fancybox').fancybox({
+          beforeLoad: function() {
+            inFancyBoxView = true;
+          },
+          afterClose: function() {
+            inFancyBoxView = false;
+          }
+
+
+      });
+    }
+    if(status == "error")
+    {
+        $('#detailview').html('<div class="holdon">Sorry, I wanted to show you some details but couldn\'t due to a problem :(</div>');
+    }
+  });
   removeImages();
   window.location.hash = "details/" + project;
   inDetailViewContext = true;
   $('html, body').animate({
     backgroundColor: '#CCCCCC'
   }, 1000);
+
 }
 
-$(document).bind('click', function (e) {
-  if(inDetailViewContext)
-  {
-    if(lastfilter != null)
-      applyFilter(lastfilter);
-    else
-      applyFilter("*");
-  }
-});
 
-$('.detailview').bind('click', function(e) {
-    e.stopPropagation();
+// drill out on click outside the window
+// Note: we only want to do this in the detail view context, but not within a fancy box
+$(document).mouseup(function (e)
+{
+    var container = $(".detailview");
+
+    if (!container.is(e.target) // if the target of the click isn't the container...
+        && container.has(e.target).length === 0) // ... nor a descendant of the container
+    {
+      if(inDetailViewContext && !inFancyBoxView)
+      {
+        if(lastfilter != null)
+          applyFilter(lastfilter);
+        else
+          applyFilter("*");
+      }
+    }
 });
