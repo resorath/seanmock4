@@ -18,7 +18,7 @@ $(window).hashchange( function(){
   // process details
   if(hash.indexOf("#details/") == 0)
   {
-    //drill(hash.substring(9));
+    drill(hash.substring(9));
 
   }
   // process home
@@ -133,6 +133,12 @@ function drill(project)
           },
           afterClose: function() {
             inFancyBoxView = false;
+          },
+          openEffect: 'none',
+          helpers: {
+            title: {
+              type: 'over'
+            }
           }
 
 

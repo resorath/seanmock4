@@ -23,7 +23,7 @@
           <p><?=$entry['description'] ?></p>
 
           <div class="additionalscreens" id="additionalscreens">
-		      <a tabindex="1" class="fancybox" rel="group" href="sample-images/image_1_big.jpg"><img src="sample-images/image_1.jpg" alt="" /></a>
-		      <a tabindex="1" class="fancybox" rel="group" href="sample-images/image_2_big.jpg"><img src="sample-images/image_2.jpg" alt="" /></a>
+		      <a tabindex="1" title="Sample Image 1" class="fancybox" rel="group" href="sample-images/image_1_big.jpg"><img src="sample-images/image_1.jpg" alt="" /></a>
+		      <a tabindex="1" title="Sample Image 2" class="fancybox" rel="group" href="sample-images/image_2_big.jpg"><img src="sample-images/image_2.jpg" alt="" /></a>
           </div>
     
