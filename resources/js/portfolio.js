@@ -1,3 +1,5 @@
+var globalPropagationCounter = 0;
+
 // Hover fix for mobile
 if ('ontouchstart' in document) {
     $('body').removeClass('no-touch');
@@ -16,9 +18,22 @@ $(window).hashchange( function(){
 
   }
   // process details
-  if(hash.indexOf("#details/") == 0)
+  if(hash.indexOf("#details/") == 0 && hash.indexOf("/screens") < 0)
   {
     drill(hash.substring(9));
+
+  }
+  // process screens
+  if(hash.indexOf("/screens") > 0)
+  {
+      var project = window.location.hash.substring(9);
+      project = project.substring(0, project.indexOf('/'));
+     
+      if($('#detailpane').is(':visible') && globalPropagationCounter == 0)
+        revealScreenshots();
+      else
+        globalPropagationCounter = 0;
+
 
   }
   // process home
@@ -70,6 +85,18 @@ $('.imagegridelement').hover(function() {
    });
 });
 
+$('body').on('click', '#morescreenshots', function (){
+  revealScreenshots();
+})
+
+$('body').on('click', '#backfromscreens', function (){
+  var project = window.location.hash.substring(9);
+  project = project.substring(0, project.indexOf('/'));
+  window.location.hash = "details/" + project;
+  $('#additionalscreens').fadeOut();
+  $('#detailpane').fadeIn();
+})
+
 /*
 $('.imagegridelement').hover(function(){
    $(this).children('img').animate({ height: $(this).height()*1.05, width: $(this).width()*1.05 }, "fast");
@@ -115,6 +142,16 @@ function removeImages()
 {    
   $('#imagegrid').isotope({ filter: '#nothing'});
   $('.detailview').fadeIn(500);
+}
+
+function revealScreenshots()
+{
+  globalPropagationCounter++;
+  var project = window.location.hash.substring(9);
+  if(window.location.hash.indexOf('/screens') < 0)
+  window.location.hash = "details/" + project + "/screens";
+  $('#detailpane').fadeOut();
+  $('#additionalscreens').fadeIn();
 }
 
 function drill(project)

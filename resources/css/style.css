@@ -55,12 +55,12 @@ footer p
 	padding: 10px 10px 10px 10px;
 }
 
-.detailview > .float-left
+#detailpane > .float-left
 {
 	float: left;
 }
 
-.detailview > .float-left > img
+#detailpane > .float-left > img
 {
 	width: 300px;
 	height: 300px;
@@ -69,12 +69,12 @@ footer p
 	margin: 5px 15px 5px 5px;
 }
 
-.detailview > h2
+#detailpane > h2
 {
 	margin-top: 5px;
 }
 
-.detailview > .float-right
+#detailpane > .float-right
 {
 	float: right;
 }
@@ -228,6 +228,22 @@ footer p
 
 #additionalscreens
 {
-	
+	text-align: center;
+	display: none;
+}
 
+.moreimage
+{
+	width: 200px;
+	height: 200px;
+	margin-bottom: 10px;
+	margin-right: 10px;
+}
+
+.backbutton
+{
+	width: 90%;
+	padding-bottom: 12px;
+	margin: 0 auto;
+	display: table;
 }

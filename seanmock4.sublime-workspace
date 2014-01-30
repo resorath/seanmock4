@@ -47,7 +47,7 @@
 			"file": "index.php",
 			"settings":
 			{
-				"buffer_size": 7510,
+				"buffer_size": 7874,
 				"line_ending": "Windows"
 			}
 		},
@@ -60,6 +60,14 @@
 			}
 		},
 		{
+			"file": "details.php",
+			"settings":
+			{
+				"buffer_size": 1107,
+				"line_ending": "Windows"
+			}
+		},
+		{
 			"file": "edit.php",
 			"settings":
 			{
@@ -68,18 +76,10 @@
 			}
 		},
 		{
-			"file": "bll/portfolioExpert.php",
-			"settings":
-			{
-				"buffer_size": 3285,
-				"line_ending": "Windows"
-			}
-		},
-		{
 			"file": "resources/css/style.css",
 			"settings":
 			{
-				"buffer_size": 2999,
+				"buffer_size": 3108,
 				"line_ending": "Windows"
 			}
 		},
@@ -96,7 +96,7 @@
 			"file": "resources/js/portfolio.js",
 			"settings":
 			{
-				"buffer_size": 3061,
+				"buffer_size": 4239,
 				"line_ending": "Windows"
 			}
 		}
@@ -145,6 +145,11 @@
 	},
 	"file_history":
 	[
+		"/E/xampp/htdocs/seanmock4/resources/js/jquery.fancybox.js",
+		"/E/xampp/htdocs/seanmock4/test_base.html",
+		"/E/xampp/htdocs/seanmock4/bll/portfolioExpert.php",
+		"/E/xampp/htdocs/seanmock4/test_ajax.html",
+		"/E/xampp/htdocs/seanmock4/resources/js/jquery.min.js",
 		"/E/xampp/htdocs/seanmock4/resources/js/jquery.animate.enhanced.min.js",
 		"/E/xampp/htdocs/seanmock4/img/thunder.png",
 		"/E/xampp/htdocs/seanmock4/test.php",
@@ -160,7 +165,6 @@
 		"/E/xampp/htdocs/seanmock4/resources/css/reset.css",
 		"/E/xampp/htdocs/seanmock4/resources/js/jquery.imagesloaded.js",
 		"/E/xampp/htdocs/seanmock4/resources/js/jquery.wookmark.min.js",
-		"/E/xampp/htdocs/seanmock4/resources/js/jquery.min.js",
 		"/E/xampp/htdocs/sched3/application/views/changeavailability.php",
 		"/E/xampp/htdocs/sched3/assets/js/com.tophatandmonocle.jquery.interface.js",
 		"/E/xampp/htdocs/sched3/application/views/templates/header.php",
@@ -268,11 +272,7 @@
 		"/E/xampp/htdocs/ugod/application/config/migration.php",
 		"/E/xampp/htdocs/ugod/application/config/mimes.php",
 		"/E/xampp/htdocs/ugod/application/config/profiler.php",
-		"/E/xampp/htdocs/ugod/application/config/smileys.php",
-		"/E/xampp/htdocs/ugod/application/config/user_agents.php",
-		"/E/xampp/htdocs/seanfeilcom/index.php",
-		"/E/xampp/htdocs/seanfeilcom/com.seanfeil.js",
-		"/E/xampp/htdocs/seanfeilcom/style.css"
+		"/E/xampp/htdocs/ugod/application/config/smileys.php"
 	],
 	"find":
 	{
@@ -293,6 +293,12 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"click",
+			"fb-start",
+			"first",
+			"fancybox",
+			"fancybox(",
+			"drill",
 			"animate",
 			"imagegridelement",
 			"180",
@@ -399,7 +405,6 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
 				{
@@ -407,15 +412,15 @@
 					"file": "index.php",
 					"settings":
 					{
-						"buffer_size": 7510,
+						"buffer_size": 7874,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3348,
-								3348
+								4330,
+								4331
 							]
 						],
 						"settings":
@@ -425,7 +430,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 501.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -442,8 +447,8 @@
 						"selection":
 						[
 							[
-								1270,
-								1235
+								332,
+								332
 							]
 						],
 						"settings":
@@ -456,15 +461,43 @@
 						"zoom_level": 1.0
 					},
 					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "details.php",
+					"settings":
+					{
+						"buffer_size": 1107,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								237,
+								237
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
 				}
 			]
 		},
 		{
-			"selected": 4,
+			"selected": 3,
 			"sheets":
 			[
 				{
-					"buffer": 2,
+					"buffer": 3,
 					"file": "edit.php",
 					"settings":
 					{
@@ -475,35 +508,8 @@
 						"selection":
 						[
 							[
-								541,
-								541
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "bll/portfolioExpert.php",
-					"settings":
-					{
-						"buffer_size": 3285,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								54,
-								54
+								2278,
+								2278
 							]
 						],
 						"settings":
@@ -522,15 +528,15 @@
 					"file": "resources/css/style.css",
 					"settings":
 					{
-						"buffer_size": 2999,
+						"buffer_size": 3108,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2928,
-								2928
+								1938,
+								1938
 							]
 						],
 						"settings":
@@ -539,7 +545,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 2446.0,
+						"translation.y": 1554.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -556,8 +562,8 @@
 						"selection":
 						[
 							[
-								5,
-								5
+								132,
+								132
 							]
 						],
 						"settings":
@@ -578,15 +584,15 @@
 					"file": "resources/js/portfolio.js",
 					"settings":
 					{
-						"buffer_size": 3061,
+						"buffer_size": 4239,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2761,
-								2768
+								3271,
+								3271
 							]
 						],
 						"settings":
@@ -596,7 +602,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1194.0,
+						"translation.y": 1176.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -632,7 +638,7 @@
 		"cols":
 		[
 			0.0,
-			0.643358689292,
+			0.552662375658,
 			1.0
 		],
 		"rows":
