@@ -4,6 +4,8 @@
 
   $entries = $db->getAllEntries();
 
+  print_r($entries);
+
 ?><!DOCTYPE html>
 <html>
   <head>
@@ -59,7 +61,7 @@
       <div id="imagegrid">
 
           <?php while($entry = $entries->fetch_assoc()): ?>
-            <div class="imagegridelement <?=$entry['tags'] ?> <?=$entry['type'] ?>" id="<?=$entry['shortname'] ?>"><img src="img/<?=$entry['thumburl'] ?>" id="<?=$entry['type'] ?>">
+            <div class="imagegridelement <?=$entry['tags'] ?> <?=$entry['type'] ?>" id="<?=$entry['shortname'] ?>"><img src="img/<?php $e=explode(",", $entry['thumburl']); echo($e[0]); ?>" id="<?=$entry['type'] ?>">
             <span><h2><?=$entry['name'] ?></h2></span>
           </div>
 

@@ -73,21 +73,50 @@
 				</div>
 
 				<div class="form-group">
-					<label for="tags">Images</label>
-					<input type="file" name="images[]" class="form-control">
-					<input type="file" name="thumbs[]" class="form-control">
-					<input type="file" name="images[]" class="form-control">
-					<input type="file" name="thumbs[]" class="form-control">
-					<input type="file" name="images[]" class="form-control">
-					<input type="file" name="thumbs[]" class="form-control">
-					<input type="file" name="images[]" class="form-control">
-					<input type="file" name="thumbs[]" class="form-control">
-					<input type="file" name="images[]" class="form-control">
-					<input type="file" name="thumbs[]" class="form-control">
-					<input type="file" name="images[]" class="form-control">
-					<input type="file" name="thumbs[]" class="form-control">
-					<input type="file" name="images[]" class="form-control">
-					<input type="file" name="thumbs[]" class="form-control">
+					<label>Image: <input type="file" name="images[]" class="form-control"></label>
+					<label>Thumb: <input type="file" name="thumbs[]" class="form-control"></label>
+					<label>Comment: <input type="text" name="comments[]" class="form-control"></label>
+					<br>
+					<label>Image: <input type="file" name="images[]" class="form-control"></label>
+					<label>Thumb: <input type="file" name="thumbs[]" class="form-control"></label>
+					<label>Comment: <input type="text" name="comments[]" class="form-control"></label>
+					<br>
+					<label>Image: <input type="file" name="images[]" class="form-control"></label>
+					<label>Thumb: <input type="file" name="thumbs[]" class="form-control"></label>
+					<label>Comment: <input type="text" name="comments[]" class="form-control"></label>
+					<br>
+					<label>Image: <input type="file" name="images[]" class="form-control"></label>
+					<label>Thumb: <input type="file" name="thumbs[]" class="form-control"></label>
+					<label>Comment: <input type="text" name="comments[]" class="form-control"></label>
+					<br>
+					<label>Image: <input type="file" name="images[]" class="form-control"></label>
+					<label>Thumb: <input type="file" name="thumbs[]" class="form-control"></label>
+					<label>Comment: <input type="text" name="comments[]" class="form-control"></label>
+					<br>
+					<label>Image: <input type="file" name="images[]" class="form-control"></label>
+					<label>Thumb: <input type="file" name="thumbs[]" class="form-control"></label>
+					<label>Comment: <input type="text" name="comments[]" class="form-control"></label>
+					<br>
+					<label>Image: <input type="file" name="images[]" class="form-control"></label>
+					<label>Thumb: <input type="file" name="thumbs[]" class="form-control"></label>
+					<label>Comment: <input type="text" name="comments[]" class="form-control"></label>
+					<br>
+					<label>Image: <input type="file" name="images[]" class="form-control"></label>
+					<label>Thumb: <input type="file" name="thumbs[]" class="form-control"></label>
+					<label>Comment: <input type="text" name="comments[]" class="form-control"></label>
+					<br>
+					<label>Image: <input type="file" name="images[]" class="form-control"></label>
+					<label>Thumb: <input type="file" name="thumbs[]" class="form-control"></label>
+					<label>Comment: <input type="text" name="comments[]" class="form-control"></label>
+					<br>
+					<label>Image: <input type="file" name="images[]" class="form-control"></label>
+					<label>Thumb: <input type="file" name="thumbs[]" class="form-control"></label>
+					<label>Comment: <input type="text" name="comments[]" class="form-control"></label>
+					<br>
+					<label>Image: <input type="file" name="images[]" class="form-control"></label>
+					<label>Thumb: <input type="file" name="thumbs[]" class="form-control"></label>
+					<label>Comment: <input type="text" name="comments[]" class="form-control"></label>
+					<br>
 				</div>
 
 				<input type="submit" class="btn btn-primary" value="Perform">

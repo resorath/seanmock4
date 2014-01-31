@@ -63,7 +63,7 @@
 			"file": "details.php",
 			"settings":
 			{
-				"buffer_size": 1107,
+				"buffer_size": 5189,
 				"line_ending": "Windows"
 			}
 		},
@@ -79,7 +79,7 @@
 			"file": "resources/css/style.css",
 			"settings":
 			{
-				"buffer_size": 3108,
+				"buffer_size": 3319,
 				"line_ending": "Windows"
 			}
 		},
@@ -96,7 +96,7 @@
 			"file": "resources/js/portfolio.js",
 			"settings":
 			{
-				"buffer_size": 4239,
+				"buffer_size": 5299,
 				"line_ending": "Windows"
 			}
 		}
@@ -293,6 +293,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"applyFilter",
+			"NYI",
+			"detailpane",
 			"click",
 			"fb-start",
 			"first",
@@ -405,6 +408,7 @@
 	"groups":
 	[
 		{
+			"selected": 2,
 			"sheets":
 			[
 				{
@@ -419,8 +423,8 @@
 						"selection":
 						[
 							[
-								4330,
-								4331
+								6839,
+								6839
 							]
 						],
 						"settings":
@@ -430,7 +434,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1162.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -467,15 +471,15 @@
 					"file": "details.php",
 					"settings":
 					{
-						"buffer_size": 1107,
+						"buffer_size": 5189,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								237,
-								237
+								1143,
+								1143
 							]
 						],
 						"settings":
@@ -528,15 +532,15 @@
 					"file": "resources/css/style.css",
 					"settings":
 					{
-						"buffer_size": 3108,
+						"buffer_size": 3319,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1938,
-								1938
+								3084,
+								3101
 							]
 						],
 						"settings":
@@ -545,7 +549,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1554.0,
+						"translation.y": 2684.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -584,15 +588,15 @@
 					"file": "resources/js/portfolio.js",
 					"settings":
 					{
-						"buffer_size": 4239,
+						"buffer_size": 5299,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3271,
-								3271
+								3486,
+								3486
 							]
 						],
 						"settings":
@@ -602,7 +606,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1176.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -638,7 +642,7 @@
 		"cols":
 		[
 			0.0,
-			0.552662375658,
+			0.5,
 			1.0
 		],
 		"rows":

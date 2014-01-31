@@ -16,7 +16,7 @@
 		public function getAllEntries()
 		{
 
-			$q = "SELECT `portfolio`.`id`, `name`, `type`, `siteurl`, `shortname`, GROUP_CONCAT(distinct `imageurl`) as imgurl, GROUP_CONCAT(distinct `thumburl`) as thumburl, GROUP_CONCAT(distinct `tag` SEPARATOR ' ') as tags FROM `portfolio` LEFT JOIN `portfolio_images` on `portfolio`.`id` = `portfolio_images`.`portfolio_id` LEFT JOIN `portfolio_tags` on `portfolio`.`id` = `portfolio_tags`.`portfolio_id` GROUP BY `portfolio`.`id`, `name`, `type`, `siteurl`, `shortname`";
+			$q = "SELECT `portfolio`.`id`, `name`, `type`, `siteurl`, `shortname`, GROUP_CONCAT(distinct `imageurl` SEPARATOR ',') as imgurl, GROUP_CONCAT(distinct `thumburl` SEPARATOR ',') as thumburl, GROUP_CONCAT(distinct `tag` SEPARATOR ' ') as tags FROM `portfolio` LEFT JOIN `portfolio_images` on `portfolio`.`id` = `portfolio_images`.`portfolio_id` LEFT JOIN `portfolio_tags` on `portfolio`.`id` = `portfolio_tags`.`portfolio_id` GROUP BY `portfolio`.`id`, `name`, `type`, `siteurl`, `shortname`";
 
 			return $this->db->query($q);
 
@@ -40,7 +40,7 @@
 
 		public function getProject($projectName)
 		{
-			$q = "SELECT `portfolio`.`id`, `name`, `type`, `siteurl`, `description`, `shortname`, GROUP_CONCAT(distinct `imageurl`) as imgurl, GROUP_CONCAT(distinct `thumburl`) as thumburl, GROUP_CONCAT(distinct `tag` SEPARATOR ' ') as tags FROM `portfolio` LEFT JOIN `portfolio_images` on `portfolio`.`id` = `portfolio_images`.`portfolio_id` LEFT JOIN `portfolio_tags` on `portfolio`.`id` = `portfolio_tags`.`portfolio_id` WHERE `shortname` = ? GROUP BY `portfolio`.`id`, `name`, `type`, `siteurl`, `shortname`";
+			$q = "SELECT `portfolio`.`id`, `name`, `type`, `siteurl`, `description`, `shortname`, GROUP_CONCAT(distinct `imageurl` SEPARATOR ',') as imgurl, GROUP_CONCAT(distinct `thumburl` SEPARATOR ',') as thumburl, GROUP_CONCAT(distinct `comment` SEPARATOR '%%') as imagecomment, GROUP_CONCAT(distinct `tag` SEPARATOR ' ') as tags FROM `portfolio` LEFT JOIN `portfolio_images` on `portfolio`.`id` = `portfolio_images`.`portfolio_id` LEFT JOIN `portfolio_tags` on `portfolio`.`id` = `portfolio_tags`.`portfolio_id` WHERE `shortname` = ? GROUP BY `portfolio`.`id`, `name`, `type`, `siteurl`, `shortname`";
 
 			$statement = $this->db->prepare($q);
 
@@ -119,7 +119,7 @@
 				}
 
 				// more queries
-				$q = "INSERT INTO portfolio_images(`portfolio_id`, `imageurl`, `thumburl`, `isPrimary`) VALUES(?, ?, ?, ?)";
+				$q = "INSERT INTO portfolio_images(`portfolio_id`, `imageurl`, `thumburl`, `comment`, `isPrimary`) VALUES(?, ?, ?, ?, ?)";
 
 				$statement = $this->db->prepare($q);
 
@@ -131,7 +131,7 @@
 						if($i > 0)
 							$primary = false;
 
-						$statement->bind_param("issi", $lastid, $images_name[$i], $thumbs_name[$i], $primary);
+						$statement->bind_param("isssi", $lastid, $images_name[$i], $thumbs_name[$i], $postdata['comments'][$i], $primary);
 						$statement->execute();
 					}
 				}
