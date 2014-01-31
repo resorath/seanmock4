@@ -4,8 +4,6 @@
 
   $entries = $db->getAllEntries();
 
-  print_r($entries);
-
 ?><!DOCTYPE html>
 <html>
   <head>
@@ -65,7 +63,7 @@
             <span><h2><?=$entry['name'] ?></h2></span>
           </div>
 
-        <?php endwhile ?>
+        <?php endwhile ?><!--
           <div class="imagegridelement ux featured" id="project1"><img src="sample-images/image_1_big.jpg" id="featured">
             <span><h2>Text test</h2></span>
           </div>
@@ -100,7 +98,7 @@
           <div class="imagegridelement standard" id="project2"><img src="sample-images/image_7.jpg" id="standard"></div>
           <div class="imagegridelement standard" id="project2"><img src="sample-images/image_8.jpg" id="standard"></div>
           <div class="imagegridelement standard" id="project2"><img src="sample-images/image_9.jpg" id="standard"></div>
-          <div class="imagegridelement standard" id="project2"><img src="sample-images/image_10.jpg" id="standard"></div>
+          <div class="imagegridelement standard" id="project2"><img src="sample-images/image_10.jpg" id="standard"></div>-->
 
       </div>
 
